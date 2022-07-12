@@ -33,6 +33,26 @@
     "@aws-cdk/core:target-partitions": [
       "aws",
       "aws-cn"
+    ],
+    "globals": {
+      "appName": "cdk-demo",
+      "region": "us-east-1"
+    },
+    "environments": [
+      {
+        "environment": "develop",
+        "accountNumber": "344905241268",
+        "branchName": "develop",
+        "s3Encrypt": false,
+        "ddPITRecovery": false
+      },
+      {
+        "environment": "production",
+        "accountNumber": "344905241268",
+        "branchName": "master",
+        "s3Encrypt": true,
+        "ddPITRecovery": true
+      }
     ]
   }
 }
